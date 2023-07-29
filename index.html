@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CRUD</title>
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <h1>crud</h1>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 form">
+          <h2>product form</h2>
+          <form action="">
+            <input type="text" name="name" id="prod_name" placeholder="Name" />
+            <input
+              type="text"
+              name="category"
+              id="prod_category"
+              placeholder="Category"
+            />
+            <input
+              type="number"
+              name="price"
+              id="prod_price"
+              placeholder="Price"
+              min="0"
+            />
+            <input
+              type="number"
+              name="count"
+              id="prod_cnt"
+              placeholder="Count"
+              min="0"
+            />
+            <input
+              type="text"
+              name="description"
+              id="prod_description"
+              placeholder="Description"
+            />
+
+            <input
+              type="search"
+              name="search"
+              id="search"
+              placeholder="Search"
+            />
+            <div class="valid-feedback">Valid Data !</div>
+            <div class="invalid-feedback">Please Enter Valid Data !!!</div>
+            <div class="btns">
+              <button class="btn add">add</button>
+              <button class="btn search search-name">search name</button>
+              <button class="btn search search-cat">search cg</button>
+              <button class="btn del-all">delete all</button>
+            </div>
+          </form>
+        </div>
+        <div class="col-lg-6 products mt-5 mt-lg-0">
+          <h2>product table</h2>
+          <table>
+            <thead>
+              <tr>
+                <th>id</th>
+                <th>name</th>
+                <th>category</th>
+                <th>price</th>
+                <th>description</th>
+                <th>delete</th>
+                <th>edit</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <script src="js/all.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

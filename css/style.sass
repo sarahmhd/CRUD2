@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Style+Script&display=swap')
+@import 'components'
+
+$gray-color: #5C5956
+$add-color: #0DC9F0
+$search-name-color: #0D6EFD
+$search-cg-color: #6C757E
+$del-color: #DC3546
+$edit-color: #FEBE08
+
+input[type="number"]
+    -webkit-appearance: textfield
+
+.valid-feedback,
+.invalid-feedback
+    font-size: 20px
+
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+
+h1
+    margin: 30px auto
+    text-align: center
+    text-transform: uppercase
+    font-weight: bold
+    letter-spacing: 2px
+    font-size: 3.2rem
+    color: $gray-color
+.row
+    margin: 40px 0
+    h2
+        font-size: 2rem
+        font-weight: bold
+        font-family: Roboto
+        text-transform: capitalize
+        margin-bottom: 30px
+    .form
+        form
+            display: flex
+            flex-direction: column
+            gap: 20px
+            input
+                width: 95%
+                padding: 10px
+                border: 1px solid #d4c5c5
+                &:focus-visible,
+                &:focus
+                    box-shadow: none
+                    outline: 0
+                &::-webkit-outer-spin-button,
+                &::-webkit-inner-spin-button
+                    -webkit-appearance: none
+                    margin: 0
+            .btns
+                width: 95%
+                display: flex
+                justify-content: space-between
+                flex-wrap: wrap
+                gap: 6px
+                .btn
+                    padding: 10px
+                    min-width: 120px
+                    color: #fff
+                    font-size: 0.95rem
+                    text-transform: capitalize
+                    &:focus
+                        box-shadow: none
+                .add
+                    background: $add-color
+                .search-name
+                    background: $search-name-color
+                .search-cat
+                    background: $search-cg-color
+                .del-all
+                    background: $del-color
+    .products
+        overflow-x: auto
+        table
+            min-width: 550px
+            th
+                color: #fff
+                background: #000
+            th,td
+                text-align: center
+                padding: 8px
+                border: 1px solid #ddd
+            .btn
+                color: #fff
+            .del
+                background: $del-color
+            .edit
+                background: $edit-color

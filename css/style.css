@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&family=Style+Script&display=swap");
+:root {
+  --main-color: #202;
+}
+
+input[type=number] {
+  -webkit-appearance: textfield;
+}
+
+.valid-feedback,
+.invalid-feedback {
+  font-size: 20px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  margin: 30px auto;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 2px;
+  font-size: 3.2rem;
+  color: #5C5956;
+}
+
+.row {
+  margin: 40px 0;
+}
+.row h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: Roboto;
+  text-transform: capitalize;
+  margin-bottom: 30px;
+}
+.row .form form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.row .form form input {
+  width: 95%;
+  padding: 10px;
+  border: 1px solid #d4c5c5;
+}
+.row .form form input:focus-visible, .row .form form input:focus {
+  box-shadow: none;
+  outline: 0;
+}
+.row .form form input::-webkit-outer-spin-button, .row .form form input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.row .form form .btns {
+  width: 95%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+.row .form form .btns .btn {
+  padding: 10px;
+  min-width: 120px;
+  color: #fff;
+  font-size: 0.95rem;
+  text-transform: capitalize;
+}
+.row .form form .btns .btn:focus {
+  box-shadow: none;
+}
+.row .form form .btns .add {
+  background: #0DC9F0;
+}
+.row .form form .btns .search-name {
+  background: #0D6EFD;
+}
+.row .form form .btns .search-cat {
+  background: #6C757E;
+}
+.row .form form .btns .del-all {
+  background: #DC3546;
+}
+.row .products {
+  overflow-x: auto;
+}
+.row .products table {
+  min-width: 550px;
+}
+.row .products table th {
+  color: #fff;
+  background: #000;
+}
+.row .products table th, .row .products table td {
+  text-align: center;
+  padding: 8px;
+  border: 1px solid #ddd;
+}
+.row .products table .btn {
+  color: #fff;
+}
+.row .products table .del {
+  background: #DC3546;
+}
+.row .products table .edit {
+  background: #FEBE08;
+}/*# sourceMappingURL=style.css.map */
